@@ -118,7 +118,7 @@ const mockOutstandingData: Outstanding[] = [
     clientName: "Sonup Bhuyan",
     outstandingAmount: 70000000.00,
     dateOfIntimation: "03 Feb 2025",
-    tentativeDueDate: "15 Apr 2025",
+    tentativeDueDate: "31 May 2025",
     status: "Overdue"
   }
 ];
