@@ -442,7 +442,7 @@ const Dashboard: React.FC<DashboardProps> = ({ activePage, setActivePage }) => {
 
   const renderInterestTable = () => {
     return (
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto ">
         <div className="bg-white py-3 px-4 border-b">
           <div className="flex items-center space-x-4">
             <button
