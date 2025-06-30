@@ -67,7 +67,7 @@ interface DashboardProps {
 }
 
 const modules = [
-  { id: 'trades', label: 'Trades', icon: <BarChart4 size={24} /> },
+  /* { id: 'trades', label: 'Trades', icon: <BarChart4 size={24} /> }, */
   { id: 'bills', label: 'Bills', icon: <FileText size={24} /> },
   { id: 'outstanding', label: 'Outstanding', icon: <CheckSquare size={24} /> },
   { id: 'ledger', label: 'Ledger', icon: <BookOpen size={24} /> },
@@ -108,7 +108,8 @@ const mockChargesData: Charge[] = [
   { month: "Feb 2025", clientId: "DI11257", clientName: "Sonup Bhuyan", panelCharges: 38442.00, status: "Paid" },
   { month: "Mar 2025", clientId: "DI11257", clientName: "Sonup Bhuyan", panelCharges: 38442.00, status: "Paid" },
   { month: "Apr 2025", clientId: "DI11257", clientName: "Sonup Bhuyan", panelCharges: 38442.00, status: "Paid" },
-  { month: "May 2025", clientId: "DI11257", clientName: "Sonup Bhuyan", panelCharges: 38442.00, status: "YTG" },
+  { month: "May 2025", clientId: "DI11257", clientName: "Sonup Bhuyan", panelCharges: 38442.00, status: "Paid" },
+  { month: "June 2025", clientId: "DI11257", clientName: "Sonup Bhuyan", panelCharges: 38442.00, status: "YTG" },
 ];
 
 const mockOutstandingData: Outstanding[] = [
@@ -116,9 +117,9 @@ const mockOutstandingData: Outstanding[] = [
     month: "Feb 2025",
     clientId: "DI11257",
     clientName: "Sonup Bhuyan",
-    outstandingAmount: 70000000.00,
+    outstandingAmount: 50000000.00,
     dateOfIntimation: "03 Feb 2025",
-    tentativeDueDate: "15 Apr 2025",
+    tentativeDueDate: "30 June 2025",
     status: "Overdue"
   }
 ];
@@ -134,6 +135,7 @@ const mockMarginData: MarginData[] = [
   { month: "Mar 2025", accountId: "DI11257", marginProvided: "--", marginUsed: "--" },
   { month: "Apr 2025", accountId: "DI11257", marginProvided: "--", marginUsed: "--" },
   { month: "May 2025", accountId: "DI11257", marginProvided: "--", marginUsed: "--" },
+  { month: "Jun 2025", accountId: "DI11257", marginProvided: "--", marginUsed: "--" },
 ];
 
 const mockInterestData: InterestData[] = [
@@ -147,13 +149,14 @@ const mockInterestData: InterestData[] = [
   { month: "Mar 2025", accountId: "DI11257", marginInterest: "--" },
   { month: "Apr 2025", accountId: "DI11257", marginInterest: "--" },
   { month: "May 2025", accountId: "DI11257", marginInterest: "--" },
+  { month: "Jun 2025", accountId: "DI11257", marginInterest: "--" },
 ];
 
 const mockLedgerData = {
-  balance: 148572341.00,
+  balance: 149358765.00,
   transactions: [
     { type: 'debit' as const, label: 'Opening balance', amount: 134800000.00 },
-    { type: 'credit' as const, label: 'Closing balance', amount: 148572341.00 }
+    { type: 'credit' as const, label: 'Closing balance', amount: 149358765.00 }
   ],
   details: [
     { type: "Fund Inflow", description: "Capital injection by firm", credit: 134800000.00, debit: 0 },
@@ -474,9 +477,9 @@ const Dashboard: React.FC<DashboardProps> = ({ activePage, setActivePage }) => {
     );
   };
 
-  if (selectedModule === 'trades') {
+ /*  if (selectedModule === 'trades') {
     return renderTradesTable();
-  }
+  } */
 
   if (selectedModule === 'bills') {
     return renderBillsTable();
