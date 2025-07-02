@@ -67,7 +67,7 @@ interface DashboardProps {
 }
 
 const modules = [
-  /* { id: 'trades', label: 'Trades', icon: <BarChart4 size={24} /> }, */
+  /* { id: 'trades', label: 'Trades', icon: <BarChart4 size={24} /> },  */
   { id: 'bills', label: 'Bills', icon: <FileText size={24} /> },
   { id: 'outstanding', label: 'Outstanding', icon: <CheckSquare size={24} /> },
   { id: 'ledger', label: 'Ledger', icon: <BookOpen size={24} /> },
