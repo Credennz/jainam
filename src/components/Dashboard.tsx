@@ -119,7 +119,7 @@ const mockOutstandingData: Outstanding[] = [
     clientName: "Sonup Bhuyan",
     outstandingAmount: 35000000.00,
     dateOfIntimation: "03 Feb 2025",
-    tentativeDueDate: "11 July 2025",
+    tentativeDueDate: "01 Aug 2025",
     status: "Overdue"
   }
 ];
@@ -153,10 +153,10 @@ const mockInterestData: InterestData[] = [
 ];
 
 const mockLedgerData = {
-  balance: 185317370.00,
+  balance: 187072825.00,
   transactions: [
     { type: 'debit' as const, label: 'Opening balance', amount: 169800000.00 },
-    { type: 'credit' as const, label: 'Closing balance', amount: 185317370.00 }
+    { type: 'credit' as const, label: 'Closing balance', amount: 187072825.00 }
   ],
   details: [
     { type: "Fund Inflow", description: "Capital injection by firm", credit: 169800000.00, debit: 0 },
