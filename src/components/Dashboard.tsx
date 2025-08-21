@@ -155,10 +155,10 @@ const mockInterestData: InterestData[] = [
 ];
 
 const mockLedgerData = {
-  balance: 183147380.00,
+  balance: 184867445.00,
   transactions: [
     { type: 'debit' as const, label: 'Opening balance', amount: 169800000.00 },
-    { type: 'credit' as const, label: 'Closing balance', amount: 183147380.00 }
+    { type: 'credit' as const, label: 'Closing balance', amount: 184867445.00 }
   ],
   details: [
     { type: "Fund Inflow", description: "Capital injection by firm", credit: 169800000.00, debit: 0 },
