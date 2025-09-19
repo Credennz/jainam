@@ -111,7 +111,8 @@ const mockChargesData: Charge[] = [
   { month: "May 2025", clientId: "DI11257", clientName: "Sonup Bhuyan", panelCharges: 38442.00, status: "Paid" },
   { month: "June 2025", clientId: "DI11257", clientName: "Sonup Bhuyan", panelCharges: 38442.00, status: "Paid" },
   { month: "July 2025", clientId: "DI11257", clientName: "Sonup Bhuyan", panelCharges: 38442.00, status: "Paid" },
-  { month: "Aug 2025", clientId: "DI11257", clientName: "Sonup Bhuyan", panelCharges: 38442.00, status: "YTG" },
+  { month: "Aug 2025", clientId: "DI11257", clientName: "Sonup Bhuyan", panelCharges: 38442.00, status: "Paid" },
+  { month: "Sep 2025", clientId: "DI11257", clientName: "Sonup Bhuyan", panelCharges: 38442.00, status: "YTG" },
 ];
 
 const mockOutstandingData: Outstanding[] = [
@@ -121,7 +122,7 @@ const mockOutstandingData: Outstanding[] = [
     clientName: "Sonup Bhuyan",
     outstandingAmount: 35000000.00,
     dateOfIntimation: "03 Feb 2025",
-    tentativeDueDate: "01 Aug 2025",
+    tentativeDueDate: "01 Sep 2025",
     status: "Overdue"
   }
 ];
@@ -155,14 +156,14 @@ const mockInterestData: InterestData[] = [
 ];
 
 const mockLedgerData = {
-  balance: 188108842.00,
+  balance: 186287842.00,
   transactions: [
     { type: 'debit' as const, label: 'Opening balance', amount: 169800000.00 },
-    { type: 'credit' as const, label: 'Closing balance', amount: 188108842.00 }
+    { type: 'credit' as const, label: 'Closing balance', amount: 186287842.00 }
   ],
   details: [
     { type: "Fund Inflow", description: "Capital injection by firm", credit: 169800000.00, debit: 0 },
-    { type: "Fund Outflow", description: "Capital outflow by firm", credit: 0, debit: 37948958.00 },
+    { type: "Fund Outflow", description: "Capital outflow by firm", credit: 0, debit: 42898958.00 },
     { type: "Trade amount", description: "Amount of fund for trades", credit: 0, debit: 226312861.00 },
     { type: "Charges and Interests", description: "Prop charges and margin interests", credit: 0, debit: 2609106.00 }
   ]
